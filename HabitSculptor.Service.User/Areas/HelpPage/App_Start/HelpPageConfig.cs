@@ -1,10 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Net.Http.Headers;
-using System.Web;
 using System.Web.Http;
 
-namespace HabitSculptor.Service.User.Areas.HelpPage
+namespace HabitSculptor.Service.Users.Areas.HelpPage.App_Start
 {
     /// <summary>
     /// Use this class to customize the Help Page.

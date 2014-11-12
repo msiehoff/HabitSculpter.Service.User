@@ -1,4 +1,4 @@
-namespace HabitSculptor.Service.User.Areas.HelpPage
+namespace HabitSculptor.Service.Users.Areas.HelpPage.SampleGeneration
 {
     /// <summary>
     /// Indicates whether the sample is used for request or response

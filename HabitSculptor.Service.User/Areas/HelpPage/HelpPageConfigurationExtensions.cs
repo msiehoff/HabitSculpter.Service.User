@@ -7,9 +7,10 @@ using System.Linq;
 using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Description;
-using HabitSculptor.Service.User.Areas.HelpPage.Models;
+using HabitSculptor.Service.Users.Areas.HelpPage.Models;
+using HabitSculptor.Service.Users.Areas.HelpPage.SampleGeneration;
 
-namespace HabitSculptor.Service.User.Areas.HelpPage
+namespace HabitSculptor.Service.Users.Areas.HelpPage
 {
     public static class HelpPageConfigurationExtensions
     {

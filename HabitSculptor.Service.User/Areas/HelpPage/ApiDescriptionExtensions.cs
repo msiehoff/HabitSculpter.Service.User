@@ -3,7 +3,7 @@ using System.Text;
 using System.Web;
 using System.Web.Http.Description;
 
-namespace HabitSculptor.Service.User.Areas.HelpPage
+namespace HabitSculptor.Service.Users.Areas.HelpPage
 {
     public static class ApiDescriptionExtensions
     {

@@ -1,7 +1,6 @@
-﻿using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
-namespace HabitSculptor.Service.User
+namespace HabitSculptor.Service.Users.App_Start
 {
     public class FilterConfig
     {

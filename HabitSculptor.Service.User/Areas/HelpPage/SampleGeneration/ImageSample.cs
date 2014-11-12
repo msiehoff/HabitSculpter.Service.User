@@ -1,6 +1,6 @@
 using System;
 
-namespace HabitSculptor.Service.User.Areas.HelpPage
+namespace HabitSculptor.Service.Users.Areas.HelpPage.SampleGeneration
 {
     /// <summary>
     /// This represents an image sample on the help page. There's a display template named ImageSample associated with this class.

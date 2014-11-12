@@ -1,9 +1,9 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using HabitSculptor.Service.User.Areas.HelpPage.Models;
+using HabitSculptor.Service.Users.Areas.HelpPage.Models;
 
-namespace HabitSculptor.Service.User.Areas.HelpPage.Controllers
+namespace HabitSculptor.Service.Users.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.

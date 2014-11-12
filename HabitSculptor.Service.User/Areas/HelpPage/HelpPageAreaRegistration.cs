@@ -1,7 +1,8 @@
 using System.Web.Http;
 using System.Web.Mvc;
+using HabitSculptor.Service.Users.Areas.HelpPage.App_Start;
 
-namespace HabitSculptor.Service.User.Areas.HelpPage
+namespace HabitSculptor.Service.Users.Areas.HelpPage
 {
     public class HelpPageAreaRegistration : AreaRegistration
     {

@@ -1,7 +1,6 @@
-﻿using System.Web;
-using System.Web.Optimization;
+﻿using System.Web.Optimization;
 
-namespace HabitSculptor.Service.User
+namespace HabitSculptor.Service.Users.App_Start
 {
     public class BundleConfig
     {
