@@ -19,13 +19,19 @@ namespace HabitSculptor.Service.Users.Models
 
         // GET api/User/5
         [ResponseType(typeof(User))]
-        public IHttpActionResult GetUser(long id)
+        public IHttpActionResult GetUser(string email, string password)
         {
-            User user = db.Users.Find(id);
+            User user = db.Users.FirstOrDefault(u => u.Email == email);
             if (user == null)
             {
                 return NotFound();
             }
+
+            if (!user.TryAuthenticate(password))
+                return NotFound();
+
+            // wipe clean password returned in user object
+            user.Password = string.Empty;
 
             return Ok(user);
         }
@@ -43,6 +49,7 @@ namespace HabitSculptor.Service.Users.Models
                 return BadRequest();
             }
 
+            user.EncryptPassword();
             db.Entry(user).State = EntityState.Modified;
 
             try
@@ -72,6 +79,8 @@ namespace HabitSculptor.Service.Users.Models
             {
                 return BadRequest(ModelState);
             }
+
+            user.EncryptPassword();
 
             db.Users.Add(user);
             db.SaveChanges();
